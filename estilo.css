@@ -8,6 +8,10 @@
     font-family: 'Rubik';
     src: url(Assets/Fonts/Rubik/Rubik-VariableFont_wght.ttf);
 }
+@font-face {
+    font-family: 'Pontano Sans';
+    src: url(Assets/Fonts/Pontano_Sans/PontanoSans-VariableFont_wght.ttf);
+}
 
 * {
     margin: 0;
@@ -29,9 +33,9 @@ a {
 }
 #logo {
     border-radius: 50%;
-    height: 60px;
+    height: 58px;
     border: 2px solid #f4f4f5;
-    margin: auto 0 auto 5px;
+    margin: auto 8px;
     vertical-align: middle;
 }
 .vertical {
@@ -42,14 +46,14 @@ a {
     position: relative;
     top: -80px;
 }
-header {
+nav {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
     z-index: 99;
 }
-.header-bar {
-    max-height: 80px;
+.nav-bar {
+    height: 70px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -58,12 +62,12 @@ header {
 .logo-y-titulo {
     align-items: center;
 }
-.titulo-header > h1 {
+.titulo-nav > h1 {
     font-family: 'Rubik', 'Coolvetica', Arial, sans-serif;
     font-weight: 500;
-    font-size: 1.4rem;
-    margin-left: 10px;
-    line-height: 1.7rem;
+    font-size: 1.3rem;
+    margin-left: 5px;
+    line-height: 1.6rem;
 }
 .menu {
     margin-right: 10px;
@@ -92,6 +96,50 @@ hr {
     width: 90%;
     margin: 30px auto;
 }
+.header-banner {
+    position: relative;
+    height: calc(100vh - 80px);
+    margin-bottom: 10px;
+    background-image: url(./Assets/Media/Banner-bg.png);
+    background-size: cover;
+}
+.banner-content {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;  
+    backdrop-filter: blur(3px);
+}
+.profile-pic {
+    aspect-ratio: 1 / 1;
+    width: 30vw;
+    object-fit: cover;
+    object-position: 50% 25%;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+.banner-descripcion {
+    font-family: 'Pontano Sans', sans-serif;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+}
+.banner-titulo {
+    font-size: 5rem;
+    line-height: 100%;
+}
+.banner-subtitulo {
+    padding: 10px 0 15px;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.banner-texto {
+    text-transform: none;
+    font-size: 1.2rem;
+}
 main {
     display: flex;
     flex-direction: row;
@@ -118,15 +166,6 @@ main {
     text-indent: 10px;
     padding: 5px 5px 25px 5px;
 }
-.profile-pic {
-    margin: 0 20px;
-    aspect-ratio: 1 / 1;
-    height: 190px;
-    object-fit: cover;
-    object-position: 50% 25%;
-    border-radius: 50%;
-    padding: 4px;
-}
 .panel {
     border-radius: 4px;
     margin: 12px 25px;
@@ -141,9 +180,6 @@ main {
 .panel-col {
     float: left;
     width: 50%;
-}
-.listas {
-    flex-wrap: wrap;
 }
 .listas-col {
     list-style-type: square;
@@ -210,7 +246,7 @@ main {
 .img-skill {
     height: 50px;
     width: auto;
-    padding: 5px 10px;
+    padding: 0 10px;
 }
 .tooltip {
     position: relative;
@@ -249,7 +285,7 @@ main {
 table, .listas {
     margin: 35px auto 45px;
     border-radius: 5px;
-    width: 80%;
+    width: 500px;
 }
 table, th, td {
     border-spacing: 0;
@@ -350,14 +386,14 @@ footer hr {
 body{
     background: rgb(218,224,221);
     background: linear-gradient(0deg, rgba(218,224,221,1) 0%, rgba(224,233,231,1) 48%, rgba(233,241,239,1) 100%); }
-.header-bar {
+.nav-bar {
     color: #f4f4f5;
     box-shadow: 0 1px 6px #1616166c;
 }
 hr {
     background-color: #5252526c;
 }
-.header-bar, .menu button {
+.nav-bar, .menu button {
     background-color: #192733;
 }
 #contact-enviar {
@@ -375,6 +411,14 @@ hr {
     transition: 0.1s;
     transform: translateY(1px);
 }
+.header-banner {
+    background-color: #f4f4f5;
+}
+.banner-content {
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #279C56, #192733 ) 1;
+}
 .titulo-panel {
     border-left: 3px solid #279C56; 
 }
@@ -384,16 +428,9 @@ hr {
 .titulo-panel, .categoria-titulo, .panel {
     background-color: #f4f4f5;
 }
-.panel {
+.panel, .header-banner {
     box-shadow: 0px 2px 5px #4747476e;
     color: #192733;
-}
-.profile-pic {
-    border: 3px solid #226f54;
-    transition: 0.3s ease;
-}
-.profile-pic:hover {
-    border-color: #279C56;
 }
 .tarjeta {
     border: 1px outset #d0dbda;
@@ -407,7 +444,7 @@ a .tarjeta-pie:hover {
     color: #279C56;
 }
 .tarjeta-contenido, table, .listas, form {
-    background-color: #d0dbda;;
+    background-color: #d0dbda;
 }
 table tr:nth-of-type(2) {
     background-color: #e0e7e7;

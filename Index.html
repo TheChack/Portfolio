@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" type="image/x-icon" href="/Assets/Media/icon.png">
-    <title>Augusto Chacana</title>
+    <script src="https://kit.fontawesome.com/0f9bde7951.js" crossorigin="anonymous"></script>
+    <title>Augusto Chacana | Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="header-bar vertical">
+    <nav>
+        <div class="nav-bar vertical">
             <div class="logo-y-titulo vertical">
-                <a href="#top-pagina"><img src="./Assets/Media/header-image.png" id="logo" alt="Logo" title=":D"></a>
-                <div class="titulo-header">
+                <a href="#top-pagina"><img src="./Assets/Media/icon.png" id="logo" alt="Logo" title=":D"></a>
+                <div class="titulo-nav">
                     <h1>Augusto Chacana<br>
                     Portfolio Oficial</h1>
                 </div>
@@ -23,17 +24,29 @@
                 <li><a href="#contacto-pagina"><button type="button">Contacto</button></a></li>
             </ul>
         </div>
-    </header>
+    </nav>
+<header>
+    <div class="header-banner">
+        <div class="banner-content flex">
+            <img class="profile-pic" src="./Assets/Media/Profilepic.jpg" alt="¡Soy yo!" >
+            <div class="banner-descripcion">
+                <h1 class="banner-titulo">Augusto Chacana</h1>
+            <h2 class="banner-subtitulo">- Programador -</h2>
+            <p class="banner-texto">Solo una persona con sumo interes en la programación e intentando
+                aprender y adentrarme más en desarrollo Full-Stack, entre otras areas.
+            </p>
+            </div>
+        </div>
+    </div>
+</header>
 <main>
     <div id="top-pagina"></div>
     <section class="paneles-principales">
         <div id="info" class="panel">
             <h1 class="titulo-panel">Quien soy</h1>
             <div class="flex">
-                <p class="texto-panel">Soy Augusto Chacana, y esta es mi
-                    prueba de portfolio personal. Por favor ayudame loco.
+                <p class="texto-panel">
                 </p>
-                <img class="profile-pic" src="./Assets/Media/Profilepic.jpg" alt="¡Soy yo!" >
             </div>
         </div>
         <div id="educacion-experiencia" class="panel">
@@ -65,7 +78,7 @@
                     <h2 class="tarjeta-titulo">Portfolio Personal</h2>
                     <p class="tarjeta-descripcion">Cree desde 0 un portfolio personal para uso profesional.
                          ¡Así es! El que estás viendo ahora mismo.</p>
-                    <a href="https://github.com/TheChack/Portfolio"><p class="tarjeta-pie">Repositorio de GitHub</p></a>
+                    <a href="https://github.com/TheChack/Portfolio" target="_blank"><p class="tarjeta-pie">Repositorio de GitHub</p></a>
                 </div>
             </div>
         </div>
@@ -73,24 +86,20 @@
             <h1 class="titulo-panel">Habilidades</h1>
             <div id="idiomas">
                 <h2 class="categoria-titulo">Idiomas</h2>
-                <table>
-                    <tr>
-                        <td>
-                            <div class="tooltip">
-                                <img class="img-skill" src="./Assets/Media/lang-es.png">
-                                <span class="tooltip-texto">Español</span>
-                            </div>
-                            <div class="tooltip">
-                                <img class="img-skill" src="./Assets/Media/lang-en.png">
-                                <span class="tooltip-texto">Inglés</span>
-                            </div>
-                            <div class="tooltip">
-                                <img class="img-skill" src="./Assets/Media/lang-jp.png">
-                                <span class="tooltip-texto">Japonés</span>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+                <ul class="listas">
+                    <li><div class="tooltip">
+                        <img class="img-skill" src="./Assets/Media/lang-es.png">
+                        <span class="tooltip-texto">Español</span>
+                    </div></li>
+                    <li><div class="tooltip">
+                        <img class="img-skill" src="./Assets/Media/lang-en.png">
+                        <span class="tooltip-texto">Inglés</span>
+                    </div></li>
+                    <li><div class="tooltip">
+                        <img class="img-skill" src="./Assets/Media/lang-jp.png">
+                        <span class="tooltip-texto">Japonés</span>
+                    </div></li>
+                </ul>
             </div>
             <div id="programacion">
                 <h2 class="categoria-titulo">Programación</h2>
