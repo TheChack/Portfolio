@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" type="image/x-icon" href="/Assets/Media/icon-head.png">
     <script src="https://kit.fontawesome.com/0f9bde7951.js" crossorigin="anonymous"></script>
+    <script type="text/JavaScript" src="./cositas.js"></script>
     <title>Augusto Chacana | Portfolio Oficial</title>
 </head>
 <body>
     <nav>
         <div class="nav-bar vertical">
             <div class="logo-y-titulo vertical">
-                <a href="#top-pagina"><img src="./Assets/Media/icon.png" id="logo" alt="Logo" title=":D"></a>
+                <img src="./Assets/Media/icon.png" id="logo" alt="Logo" title=":D">
                 <div class="titulo-nav">
-                    <h1>Augusto Chacana<br>
+                    <h1 id="titulo-logo">Augusto Chacana<br>
                     Portfolio Oficial</h1>
                 </div>
             </div>
@@ -33,8 +34,7 @@
                 <h1 class="banner-titulo">Augusto Chacana</h1>
             <h2 class="banner-subtitulo">- Programador -</h2>
             <p class="banner-texto">Solo una persona con sumo interes en la programación e intentando
-                aprender y adentrarme más en desarrollo Full-Stack, entre otras areas.
-            </p>
+                aprender y adentrarme más en desarrollo Full-Stack, entre otras areas.</p>
             </div>
         </div>
     </div>
@@ -42,13 +42,6 @@
 <main>
     <div id="top-pagina"></div>
     <section class="paneles-principales">
-        <div id="info" class="panel">
-            <h1 class="titulo-panel">Quien soy</h1>
-            <div class="flex">
-                <p class="texto-panel">
-                </p>
-            </div>
-        </div>
         <div id="educacion-experiencia" class="panel">
             <div id="educacion" class="panel-col">
                 <h1 class="titulo-panel">Educación</h1>
@@ -233,19 +226,24 @@
                         <label for="contact-mensaje"></label> 
                     <textarea id="contact-mensaje" name="contact-mensaje" placeholder="Ingrese aquí su mensaje"></textarea>
                     <label for="adjuntar-archivo"></label>
-                        <input type="checkbox" id="adjuntar-archivo"> Adjuntar archivo
+                        <input type="checkbox" id="adjuntar-archivo" onclick="checkboxAdj()"> Adjuntar archivo
+                    <label for="subir-archivo"></label>
+                        <div id="subir-archivos">
+                            <button class="subir-archivo-boton" 
+                                onclick="document.getElementById('subir-archivo').click()">Seleccionar Archivo</button>
+                            <input type="file" id="subir-archivo" name="archivo" style="display: none;">
+                        </div>
                 <label for="contact-enviar"></label>
                 </div>
-                    <input type="submit" id="contact-enviar" name="contact-enviar" value="Enviar">
+                <input type="submit" id="contact-enviar" name="contact-enviar" value="Enviar">
+                <hr class="divisor">
+                    <div class="social-media">
+                        <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Media/email.png" /></a>
+                        <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><img src="./Assets/Media/whatsapp.png"/></a>
+                        <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><img src="./Assets/Media/linkedin.png" /></a>
+                        <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Media/github.png" /></a>
+                    </div>
             </form>
-        <hr class="divisor">
-            <h3>Redes de Contacto</h3>
-            <div class="social-media" >
-                <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Media/email.png" /></a>
-                <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><img src="./Assets/Media/whatsapp.png"/></a>
-                <a href="linkedin.com/in/augusto-chacana" target="_blank"><img src="./Assets/Media/linkedin.png" /></a>
-                <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Media/github.png" /></a>
-            </div>
         </div>
     </section>
 </main>
@@ -253,11 +251,11 @@
         <p>Propiedad de Augusto Chacana.</p>
         <p>Copyright 2023</p>
         <hr>
-        <div class="social-media" >
-            <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Media/email.png" /></a>
-            <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><img src="./Assets/Media/whatsapp.png"/></a>
-            <a href="linkedin.com/in/augusto-chacana" target="_blank"><img src="./Assets/Media/linkedin.png" /></a>
-            <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Media/github.png" /></a>
+        <div class="social-media-footer">
+            <a href="mailto:augustochacana6@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/TheChack" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
         <p class="volver-arriba"><a href="#top-pagina">Volver Arriba</a></p>
     </footer>
