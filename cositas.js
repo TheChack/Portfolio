@@ -8,3 +8,9 @@ function checkboxAdj() {
         boton.style.display = "none";
       }
 }
+function fechaYHora() {
+  const tiempo = new Date();
+  let anio = tiempo.getFullYear();
+
+  
+}
