@@ -34,7 +34,7 @@
         </div>
     </nav>
 <header>
-    <div class="header-banner">
+    <div class="header-banner" id="header-banner">
         <div class="banner-content flex">
             <img class="profile-pic" src="./Assets/Media/Profilepic.jpg" alt="¡Soy yo!" >
             <div class="banner-descripcion">
@@ -75,9 +75,9 @@
                 <img class="tarjeta-img" src="./Assets/Media/proyecto-portfolio.png">
                 <div class="tarjeta-contenido">
                     <h2 class="tarjeta-titulo">Portfolio Personal</h2>
-                    <p class="tarjeta-descripcion">Cree desde 0 un portfolio personal para uso profesional.
+                    <p class="tarjeta-descripcion">Creé desde cero un portfolio personal para uso profesional.
                          ¡Así es! El que estás viendo ahora mismo.</p>
-                    <a href="https://github.com/TheChack/Portfolio" target="_blank"><p class="tarjeta-pie">Repositorio de GitHub</p></a>
+                    <a href="https://github.com/TheChack/Portfolio" target="_blank" class="tarjeta-pie">Repositorio de GitHub</a>
                 </div>
             </div>
         </div>
@@ -89,14 +89,36 @@
                     <li><div class="tooltip">
                         <img class="img-skill" src="./Assets/Media/lang-es.png">
                         <span class="tooltip-texto">Español</span>
+                        <div class="rating">
+                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
+                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
+                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
+                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
+                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
+                        </div>
                     </div></li>
                     <li><div class="tooltip">
                         <img class="img-skill" src="./Assets/Media/lang-en.png">
                         <span class="tooltip-texto">Inglés</span>
+                        <div class="rating">
+                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
+                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
+                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
+                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
+                            <img class="estrella-media" src="./Assets/Icons/star-half-stroke-regular.svg">
+                        </div>
                     </div></li>
                     <li><div class="tooltip">
                         <img class="img-skill" src="./Assets/Media/lang-jp.png">
                         <span class="tooltip-texto">Japonés</span>
+                        <div class="rating">
+                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
+                            <img class="estrella-media" src="./Assets/Icons/star-half-stroke-regular.svg">
+                            <img class="estrella-vacia" src="./Assets/Icons/star-regular.svg">
+                            <img class="estrella-vacia" src="./Assets/Icons/star-regular.svg">
+                            <img class="estrella-vacia" src="./Assets/Icons/star-regular.svg">
+                        </div>
+                        
                     </div></li>
                 </ul>
             </div>
@@ -265,6 +287,7 @@
             <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Icons/github.svg"></a>
         </div>
         <p class="volver-arriba"><a href="#top-pagina">Volver Arriba</a></p>
+        <span id="hora"></span>
     </footer>
 </body>
 </html>
