@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" type="image/x-icon" href="/Assets/Media/icon-head.png">
-    <script src="https://kit.fontawesome.com/0f9bde7951.js" crossorigin="anonymous"></script>
     <script type="text/JavaScript" src="./cositas.js"></script>
     <title>Augusto Chacana | Portfolio Oficial</title>
 </head>
@@ -20,11 +19,18 @@
                     Portfolio Oficial</h1>
                 </div>
             </div>
-            <ul class="menu">
-                <li><a href="#top-pagina"><button type="button">Sobre Mí</button></a></li>
-                <li><a href="#proyectos"><button type="button">Proyectos</button></a></li>
-                <li><a href="#contacto-pagina"><button type="button">Contacto</button></a></li>
-            </ul>
+            <div class="menu">
+                <a href="#top-pagina">Sobre Mí</a>
+                <a href="#proyectos">Proyectos</button></a>
+                <a href="#contacto-pagina">Contacto</a>
+                <a class="config-button" onclick="menuConfig()"><img id="config-img" src="./Assets/Icons/config.svg"></a>
+                    <div id="config-menu" class="config-dropdown">
+                        <a id="dark-mode-button" onclick="modoOscuro()">
+                            <img id="dark-mode-img1" src="./Assets/Icons/darkmode-luna.svg">
+                            <img id="dark-mode-img2" src="./Assets/Icons/darkmode-sol.svg"></a>
+                        <a>Hola</a>
+                    </div>
+                </div>
         </div>
     </nav>
 <header>
@@ -174,7 +180,8 @@
                         <th>Intermedio</th>
                         <td>
                         <img class="img-skill" src="./Assets/Icons/premiere.svg">
-                        <img class="img-skill" src="./Assets/Icons/office.svg"></td>
+                        <img class="img-skill" src="./Assets/Icons/office.svg">
+                        <img class="img-skill" src="./Assets/Icons/wordpress.svg"></td>
                     </tr>
                     <tr>
                         <th>Avanzado</th>
@@ -238,10 +245,10 @@
                 <input type="submit" id="contact-enviar" name="contact-enviar" value="Enviar">
                 <hr class="divisor">
                     <div class="social-media">
-                        <a href="mailto:augustochacana6@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/TheChack" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Icons/email.svg"></a>
+                        <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><img src="./Assets/Icons/whatsapp.svg"></a>
+                        <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><img src="./Assets/Icons/linkedin.svg"></a>
+                        <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Icons/github.svg" style="filter:brightness(10%);"></a>
                     </div>
             </form>
         </div>
@@ -252,10 +259,10 @@
         <p>Copyright 2023</p>
         <hr>
         <div class="social-media-footer">
-            <a href="mailto:augustochacana6@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/TheChack" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Icons/email.svg"></a>
+            <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><img src="./Assets/Icons/whatsapp.svg"></a>
+            <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><img src="./Assets/Icons/linkedin.svg"></a>
+            <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Icons/github.svg"></a>
         </div>
         <p class="volver-arriba"><a href="#top-pagina">Volver Arriba</a></p>
     </footer>
