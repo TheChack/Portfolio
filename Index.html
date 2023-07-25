@@ -9,7 +9,7 @@
     <title>Augusto Chacana | Portfolio Oficial</title>
 </head>
 <body>
-    <div id="top-pagina"></div>
+    <div id="a-top"></div>
     <nav>
         <div class="nav-bar vertical">
             <div class="logo-y-titulo vertical">
@@ -20,9 +20,9 @@
                 </div>
             </div>
             <div class="menu">
-                <a href="#top-pagina">Sobre Mí</a>
-                <a href="#proyectos">Proyectos</button></a>
-                <a href="#contacto-pagina">Contacto</a>
+                <a href="#a-top">Sobre Mí</a>
+                <a href="#a-proyectos">Proyectos</button></a>
+                <a href="#a-contacto">Contacto</a>
                 <a class="config-button" onclick="menuConfig()"><img id="config-img" src="./Assets/Icons/config.svg"></a>
                     <div id="config-menu" class="config-dropdown">
                         <a id="dark-mode-button" onclick="modoOscuro()">
@@ -30,7 +30,7 @@
                             <img id="dark-mode-img2" src="./Assets/Icons/darkmode-sol.svg"></a>
                         <a>Hola</a>
                     </div>
-                </div>
+            </div>
         </div>
     </nav>
 <header>
@@ -42,6 +42,12 @@
             <h2 class="banner-subtitulo">- Programador -</h2>
             <p class="banner-texto">Solo una persona con sumo interes en la programación e intentando
                 aprender y adentrarme más en desarrollo Full-Stack, entre otras areas.</p>
+                <div class="social-media">
+                    <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Icons/email.svg"></a>
+                    <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><img src="./Assets/Icons/whatsapp.svg"></a>
+                    <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><img src="./Assets/Icons/linkedin-solid.svg"></a>
+                    <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Icons/github.svg"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -69,6 +75,7 @@
                 </ul>
             </div>
         </div>
+        <div id="a-proyectos"></div>
         <div id="proyectos" class="panel">
             <h1 class="titulo-panel">Proyectos</h1>
             <div class="tarjeta flex">
@@ -242,7 +249,7 @@
                     </ul>
             </div>
         </div>
-        <div id="contacto-pagina"></div>
+        <div id="a-contacto"></div>
         <div id="contacto" class="panel">
             <h1 class="titulo-panel">Contacto</h1>
             <form action="">
@@ -264,21 +271,14 @@
                         </div>
                 <label for="contact-enviar"></label>
                 </div>
-                <input type="submit" id="contact-enviar" name="contact-enviar" value="Enviar">
-                <hr class="divisor">
-                    <div class="social-media">
-                        <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Icons/email.svg"></a>
-                        <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><img src="./Assets/Icons/whatsapp.svg"></a>
-                        <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><img src="./Assets/Icons/linkedin.svg"></a>
-                        <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Icons/github.svg" style="filter:brightness(10%);"></a>
-                    </div>
+                <input type="submit" id="contact-enviar" name="contact-enviar" value="Enviar">       
             </form>
         </div>
     </section>
 </main>
     <footer>
         <p>Propiedad de Augusto Chacana.</p>
-        <p>Copyright 2023</p>
+        <p>Copyright 2023 (?).</p>
         <hr>
         <div class="social-media-footer">
             <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Icons/email.svg"></a>
@@ -286,7 +286,7 @@
             <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><img src="./Assets/Icons/linkedin.svg"></a>
             <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Icons/github.svg"></a>
         </div>
-        <p class="volver-arriba"><a href="#top-pagina">Volver Arriba</a></p>
+        <p class="volver-arriba"><a href="#a-top">Volver Arriba</a></p>
         <span id="hora"></span>
     </footer>
 </body>

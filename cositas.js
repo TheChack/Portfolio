@@ -11,11 +11,13 @@ function checkboxAdj() {
 
 function menuConfig() {
   var lista = document.getElementById('config-menu');
+  var img = document.getElementById('config-img');
 
   lista.classList.toggle("config-mostrar");
+  img.classList.toggle("config-active");
   
   window.onclick = function(event) {
-    if (!event.target.matches('.config-button')) {
+    if (!event.target.matches('.config-button')&&!event.target.matches('#config-img')) {
       var dropdowns = document.getElementsByClassName("config-dropdown");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
@@ -25,8 +27,7 @@ function menuConfig() {
         }
       }
     }
-  } 
-
+  }
 }
 
 
@@ -59,6 +60,17 @@ function fechaHora() {
   var dia = d.getDay();
   var diaMes = d.getDate();
   var mes = d.getMonth();
+
+  function conCero(n) {
+    if (n < 10) {
+      n = "0" + n;
+    }
+    return n;
+  }
+
+  h = conCero(h);
+  m = conCero(m);
+  s = conCero(s);
 
   var semana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
   var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 

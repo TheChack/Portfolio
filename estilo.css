@@ -46,7 +46,7 @@ a {
     display: flex;
     flex-direction: row;
 }
-#top-pagina {
+#a-top, #a-proyectos, #a-contacto {
     position: relative;
     top: -80px;
 }
@@ -92,16 +92,23 @@ nav {
     float: right;
     text-align: center;
     right: 0;
-    min-width: 60px;
+    height: 0;
+    min-width: 80px;
     z-index: 10;
-    transform: translate(0, 8px);
+    transition: 0.2s ease;
 }
 .config-dropdown a {
     display: block;
-    padding: 12px 12px;
+    padding: 10px 12px;
     margin: 0;
 }
-.config-mostrar {display: block;}
+.config-active {
+    transform: rotate(90deg);
+    transition: 0.1s ease;
+}
+.config-mostrar {
+    display: block;
+}
 #config-img {
     margin: auto;
 }
@@ -160,6 +167,7 @@ hr {
 .banner-content {
     align-self: center;
     justify-self: center;
+    justify-content: space-between;
     width: 85%;
     z-index: 2;
     padding: 30px;
@@ -167,9 +175,10 @@ hr {
 }
 .profile-pic {
     aspect-ratio: 1 / 1;
-    width: 30vw;
+    width: 30%;
+    height: fit-content;
     object-fit: cover;
-    object-position: 50% 25%;
+    object-position: 50% 20%;
     border-radius: 50%;
     margin-right: 25px;
 }
@@ -191,6 +200,19 @@ hr {
 .banner-texto {
     text-transform: none;
     font-size: 1.2rem;
+}
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: 30px auto 0;
+}
+.social-media a img {
+    height: 35px;
+    transition: 0.2s;
+}
+.social-media a img:hover {
+    filter: drop-shadow(4px 4px #0e0e0e6e);
 }
 main {
     display: flex;
@@ -407,20 +429,7 @@ h3 {
     text-align: center;
     font-weight: 500;
 }
-.social-media {
-    display: flex;
-    justify-content: space-evenly;
-    width: 200px;
-    margin: 25px auto 0;
-}
-.social-media a img {
-    height: 30px;
-    opacity: 75%;
-    transition: 0.1s;
-}
-.social-media a img:hover {
-    opacity: unset;
-}
+
 
 footer {
     padding: 25px 0;
@@ -484,6 +493,9 @@ hr {
 }
 .menu > a:active {
     background-color:#226f54;
+}
+.config-dropdown a {
+    background-color: #253747;
 }
 #contact-enviar:hover, .subir-archivo-boton:hover,
  .config-dropdown a:hover, .tarjeta-pie:hover {
