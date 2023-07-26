@@ -50,6 +50,15 @@ function modoOscuro() {
   }
 }
 
+function fondoDinamico() {
+  var fondo = document.getElementById('header-banner');
+
+  fondo.addEventListener("mousemove", (cursor) => {
+    fondo.style.backgroundPositionX = cursor.offsetX + "px";
+    fondo.style.backgroundPositionY = cursor.offsetY + "px";
+  });
+}
+
 function fechaHora() {
   var span = document.getElementById('hora');
 
