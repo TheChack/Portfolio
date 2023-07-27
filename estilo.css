@@ -22,7 +22,16 @@ html {
 body {
     font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+     }
 }
 a {
     text-decoration: none;
@@ -37,8 +46,7 @@ a {
 }
 #logo {
     border-radius: 50%;
-    height: 58px;
-    border: 2px solid #f4f4f5;
+    height: 44px;
     margin: auto 8px;
     vertical-align: middle;
 }
@@ -46,9 +54,9 @@ a {
     display: flex;
     flex-direction: row;
 }
-#top-pagina {
+#a-top, #a-proyectos, #a-contacto {
     position: relative;
-    top: -80px;
+    top: -50px;
 }
 nav {
     position: -webkit-sticky; /* Safari */
@@ -57,7 +65,7 @@ nav {
     z-index: 3;
 }
 .nav-bar {
-    height: 70px;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     padding: 6px 0;
@@ -68,10 +76,9 @@ nav {
 .titulo-nav > h1 {
     font-family: 'Rubik', 'Coolvetica', Arial, sans-serif;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-left: 5px;
-    line-height: 1.6rem;
-    transition: 0.5s ease;
+    line-height: 1.5rem;
     cursor: default;
 }
 .menu {
@@ -92,16 +99,25 @@ nav {
     float: right;
     text-align: center;
     right: 0;
-    min-width: 60px;
+    height: 0;
+    opacity: 0;
+    width: fit-content;
     z-index: 10;
-    transform: translate(0, 8px);
+    transition: 0.2s ease;
 }
 .config-dropdown a {
     display: block;
-    padding: 12px 12px;
+    padding: 10px 12px;
     margin: 0;
 }
-.config-mostrar {display: block;}
+.config-active {
+    transform: rotate(90deg);
+    transition: 0.1s ease;
+}
+.config-mostrar {
+    display: block;
+    opacity: 100;
+}
 #config-img {
     margin: auto;
 }
@@ -112,15 +128,6 @@ nav {
     width: fit-content;
     transition: 0.1s;
     font-size: 16px;
-    font-family: 'Rubik', sans-serif;
-}
-.tarjeta-pie {
-    padding: 3px 6px;
-    margin: 0 auto;
-    width: fit-content;
-    height: fit-content;
-    transition: 0.1s;
-    font-size: 14px;
     font-family: 'Rubik', sans-serif;
 }
 .config-button {
@@ -150,26 +157,31 @@ hr {
 }
 .header-banner {
     display: grid;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 50px);
     margin-bottom: 10px;
-    background-image: url(./Assets/Media/Banner-bg1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(./Assets/Media/Banner-bg1.jpg), url(./Assets/Media/Banner-bg2.jpg);
+    background-position: 50% 50%, 50% 50%;
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
     transition: 0.3s;
 }
 .banner-content {
     align-self: center;
     justify-self: center;
+    justify-content: space-between;
     width: 85%;
     z-index: 2;
     padding: 30px;
     cursor: default;
+    animation: fadeInAnimation ease 2s; animation-iteration-count: 1; animation-fill-mode: forwards;
 }
 .profile-pic {
     aspect-ratio: 1 / 1;
-    width: 30vw;
+    width: 30%;
+    height: fit-content;
     object-fit: cover;
-    object-position: 50% 25%;
+    object-position: 50% 20%;
     border-radius: 50%;
     margin-right: 25px;
 }
@@ -191,6 +203,19 @@ hr {
 .banner-texto {
     text-transform: none;
     font-size: 1.2rem;
+}
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: 30px auto 0;
+}
+.social-media a img {
+    height: 35px;
+    transition: 0.2s;
+}
+.social-media a img:hover {
+    filter: drop-shadow(4px 4px #0e0e0e6e);
 }
 main {
     display: flex;
@@ -273,6 +298,15 @@ main {
 .tarjeta-descripcion {
     text-indent: 10px;
     margin: 5px 5px 10px;
+}
+.tarjeta-pie {
+    padding: 3px 6px;
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.1s;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
 }
 .listas {
     list-style: none;
@@ -407,20 +441,7 @@ h3 {
     text-align: center;
     font-weight: 500;
 }
-.social-media {
-    display: flex;
-    justify-content: space-evenly;
-    width: 200px;
-    margin: 25px auto 0;
-}
-.social-media a img {
-    height: 30px;
-    opacity: 75%;
-    transition: 0.1s;
-}
-.social-media a img:hover {
-    opacity: unset;
-}
+
 
 footer {
     padding: 25px 0;
@@ -484,6 +505,9 @@ hr {
 }
 .menu > a:active {
     background-color:#226f54;
+}
+.config-dropdown a {
+    background-color: #253747;
 }
 #contact-enviar:hover, .subir-archivo-boton:hover,
  .config-dropdown a:hover, .tarjeta-pie:hover {
