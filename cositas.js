@@ -17,7 +17,7 @@ function menuConfig() {
   img.classList.toggle("config-active");
   
   window.onclick = function(event) {
-    if (!event.target.matches('.config-button')&&!event.target.matches('#config-img')) {
+    if (!event.target.matches('.config-button') && !event.target.matches('#config-img')) {
       var dropdowns = document.getElementsByClassName("config-dropdown");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
