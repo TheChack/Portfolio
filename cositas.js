@@ -42,22 +42,14 @@ function modoOscuro() {
   if (darkBody.className == 'modo-oscuro') {
     luna.style.display = "none";
     sol.style.display = "block";
-    banner.style.backgroundImage = "url(./Assets/Media/Banner-bg2.jpg)";
+    banner.style.backgroundImage = "url(./Assets/Media/Banner-bg2.svg)";
   } else {
     luna.style.display = "block";
     sol.style.display = "none";
-    banner.style.backgroundImage = "url(./Assets/Media/Banner-bg1.jpg)";
+    banner.style.backgroundImage = "url(./Assets/Media/Banner-bg1.svg)";
   }
 }
 
-function fondoDinamico() {
-  var fondo = document.getElementById('header-banner');
-
-  fondo.addEventListener("mousemove", (cursor) => {
-    fondo.style.backgroundPositionX = cursor.offsetX + "px";
-    fondo.style.backgroundPositionY = cursor.offsetY + "px";
-  });
-}
 
 function fechaHora() {
   var span = document.getElementById('hora');

@@ -29,6 +29,7 @@
 
     --darkmode-bg: #181f29;
     --darkmode-panel: #2b3e49;
+    --darkmode-shadow: #0f0f0f6e;
 }
 * {
     margin: 0;
@@ -42,10 +43,10 @@ body {
     transition: all 0.3s ease-out;
     background-color: var(--white-background);
 }
-@keyframes fadeInAnimation {
+@keyframes fadeHeader {
     0% {
         opacity: 0;
-        transform: translateY(10%);
+        transform: translateY(5%);
     }
     100% {
         opacity: 1;
@@ -190,7 +191,7 @@ hr {
     display: grid;
     height: calc(100vh - 50px);
     margin-bottom: 10px;
-    background-image: url(./Assets/Media/Banner-bg1.jpg), url(./Assets/Media/Banner-bg2.jpg);
+    background-image: url(./Assets/Media/Banner-bg1.svg), url(./Assets/Media/Banner-bg2.svg);
     background-position: 50% 50%, 50% 50%;
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
@@ -207,7 +208,7 @@ hr {
     z-index: 2;
     padding: 30px;
     cursor: default;
-    animation: fadeInAnimation ease 2s; animation-iteration-count: 1; animation-fill-mode: forwards;
+    animation: fadeHeader ease 1s; animation-iteration-count: 1; animation-fill-mode: forwards;
 }
 .profile-pic {
     aspect-ratio: 1 / 1;
@@ -519,7 +520,7 @@ body.modo-oscuro {
 }
 body.modo-oscuro .header-banner {
     color: var(--white-site);
-    box-shadow: 0px 2px 5px #0e0e0e6e;
+    box-shadow: 0px 2px 5px var(--darkmode-shadow);
 }
 body.modo-oscuro .panel, body.modo-oscuro .titulo-panel, 
 body.modo-oscuro .categoria-titulo {
@@ -527,11 +528,11 @@ body.modo-oscuro .categoria-titulo {
     color: #f4f4f5;
 }
 body.modo-oscuro .panel {
-    box-shadow: 0px 2px 5px #0e0e0e6e;
+    box-shadow: 0px 2px 5px var(--darkmode-shadow);
 }
 body.modo-oscuro .tarjeta {
     border: 1px outset #515c81;
-    box-shadow: 4px 4px #161616cc;
+    box-shadow: 4px 4px var(--darkmode-shadow);
 }
 body.modo-oscuro .tarjeta, body.modo-oscuro .tarjeta-contenido, 
 body.modo-oscuro table, body.modo-oscuro .listas, body.modo-oscuro form {
