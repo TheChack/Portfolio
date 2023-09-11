@@ -11,8 +11,8 @@
 <body>
     <div id="a-top"></div>
     <nav>
-        <div class="nav-bar vertical">
-            <div class="logo-y-titulo vertical">
+        <div class="nav-bar flex">
+            <div class="logo-y-titulo flex">
                 <img src="./Assets/Media/icon.png" id="logo" alt="Logo" title=":D">
                 <div class="titulo-nav">
                     <h1 id="titulo-logo">Augusto Chacana<br>
@@ -20,15 +20,16 @@
                 </div>
             </div>
             <div class="menu">
-                <a href="#a-top">Sobre Mí</a>
-                <a href="#a-proyectos">Proyectos</button></a>
-                <a href="#a-contacto">Contacto</a>
+                <a href="#a-top">Inicio</a>
+                <a href="#a-proyectos">Proyectos</a>
+                <a href="#a-skills">Habilidades</a>
                 <a class="config-button" onclick="menuConfig()"><img id="config-img" src="./Assets/Icons/config.svg"></a>
                     <div id="config-menu" class="config-dropdown">
                         <a id="dark-mode-button" onclick="modoOscuro()">
                             <img id="dark-mode-img1" class="dark-mode-mostrar" src="./Assets/Icons/darkmode-luna.svg">
                             <img id="dark-mode-img2" class="dark-mode" src="./Assets/Icons/darkmode-sol.svg"></a>
-                        <a>Hola</a>
+                        <a>Button test 1</a>
+                        <a>Button test 1</a>
                     </div>
             </div>
         </div>
@@ -89,6 +90,7 @@
             </div>
         </div>
         <div id="habilidades" class="panel">
+            <div id="a-skills"></div>
             <h1 class="titulo-panel">Habilidades</h1>
             <div id="idiomas">
                 <h2 class="categoria-titulo">Idiomas</h2>
@@ -248,31 +250,6 @@
                         </div></li> 
                     </ul>
             </div>
-        </div>
-        <div id="a-contacto"></div>
-        <div id="contacto" class="panel">
-            <h1 class="titulo-panel">Contacto</h1>
-            <form action="">
-                <h3>Enviame un correo por cualquier eventualidad</h3>
-                <div class="align">
-                    <label for="contact-asunto">Asunto: </label>
-                        <input type="text" class="input-contacto" id="contact-asunto" name="contact-asunto" placeholder="Asunto">
-                    <label for="contact-correo">Correo: </label>
-                        <input type="email" class="input-contacto" id="contact-correo" name="contact-correo" required placeholder="Correo Electrónico">                   
-                        <label for="contact-mensaje"></label> 
-                    <textarea id="contact-mensaje" name="contact-mensaje" placeholder="Ingrese aquí su mensaje"></textarea>
-                    <label for="adjuntar-archivo"></label>
-                        <input type="checkbox" id="adjuntar-archivo" onclick="checkboxAdj()"> Adjuntar archivo
-                    <label for="subir-archivo"></label>
-                        <div id="subir-archivos">
-                            <button class="subir-archivo-boton" 
-                                onclick="document.getElementById('subir-archivo').click()">Seleccionar Archivo</button>
-                            <input type="file" id="subir-archivo" name="archivo" style="display: none;">
-                        </div>
-                <label for="contact-enviar"></label>
-                </div>
-                <input type="submit" id="contact-enviar" name="contact-enviar" value="Enviar">       
-            </form>
         </div>
     </section>
 </main>
