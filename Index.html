@@ -9,20 +9,18 @@
     <title>Augusto Chacana | Portfolio Oficial</title>
 </head>
 <body>
-    <div id="a-top"></div>
     <nav>
-        <div class="nav-bar flex">
+        <div class="nav-bar flex" id="nav-bar">
             <div class="logo-y-titulo flex">
                 <img src="./Assets/Media/icon.png" id="logo" alt="Logo" title=":D">
                 <div class="titulo-nav">
-                    <h1 id="titulo-logo">Augusto Chacana<br>
-                    Portfolio Oficial</h1>
+                    <h1 id="titulo-logo">Augusto<br/>Chacana</h1>
                 </div>
             </div>
             <div class="menu">
-                <a href="#a-top">Inicio</a>
-                <a href="#a-proyectos">Proyectos</a>
-                <a href="#a-skills">Habilidades</a>
+                <a href="#">Inicio</a>
+                <a href="#">Sobre mí</a>
+                <a href="#">Proyectos</a>
                 <a class="config-button" onclick="menuConfig()"><img id="config-img" src="./Assets/Icons/config.svg"></a>
                     <div id="config-menu" class="config-dropdown">
                         <a id="dark-mode-button" onclick="modoOscuro()">
@@ -34,237 +32,31 @@
             </div>
         </div>
     </nav>
-<header>
-    <div class="header-banner" id="header-banner">
+<main>
+    <section class="header-banner" id="header-banner">
         <div class="banner-content flex">
-            <img class="profile-pic" src="./Assets/Media/Profilepic.jpg" alt="¡Soy yo!" >
+            <img class="profile-pic" src="./Assets/Media/Profilepic.jpg" alt="imagen de perfil" >
             <div class="banner-descripcion">
                 <h1 class="banner-titulo">Augusto Chacana</h1>
-            <h2 class="banner-subtitulo">- Programador -</h2>
-            <p class="banner-texto">Solo una persona con sumo interes en la programación e intentando
-                aprender y adentrarme más en desarrollo Full-Stack, entre otras areas.</p>
-                <div class="social-media">
-                    <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Icons/email.svg"></a>
-                    <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><img src="./Assets/Icons/whatsapp.svg"></a>
-                    <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><img src="./Assets/Icons/linkedin-solid.svg"></a>
-                    <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Icons/github.svg"></a>
-                </div>
+                <h2 class="banner-subtitulo">Programador | Diseñador</h2>
+                <p class="banner-texto"></p>
             </div>
         </div>
-    </div>
-</header>
-<main>
-    <section class="paneles-principales">
-        <div id="educacion-experiencia" class="panel">
-            <div id="educacion" class="panel-col">
-                <h1 class="titulo-panel">Educación</h1>
-                <ul class="listas-col">
-                    <li class="listas-item">Diploma Secundario<br>
-                    Instituto Privado Pía Didoménico</li>
-                    <p>2010</p>
-                </ul>
-            </div>
-            <div id="experiencia" class="panel-col">
-                <h1 class="titulo-panel">Experiencia</h1>
-                <ul class="listas-col">
-                    <li class="listas-item">Cámara de Diputados de Catamarca<br>
-                        Dirección de Modernización</li>
-                    <p>2023 - Actualidad</p>
-                    <li class="listas-item">Comparía de Cervezas S.R.L. Burgerbeer<br>
-                    Mozo de motrador</li>
-                    <p>2019 - 2021</p>
-                </ul>
-            </div>
-        </div>
-        <div id="a-proyectos"></div>
-        <div id="proyectos" class="panel">
-            <h1 class="titulo-panel">Proyectos</h1>
-            <div class="tarjeta flex">
-                <img class="tarjeta-img" src="./Assets/Media/proyecto-portfolio.png">
-                <div class="tarjeta-contenido">
-                    <h2 class="tarjeta-titulo">Portfolio Personal</h2>
-                    <p class="tarjeta-descripcion">Creé desde cero un portfolio personal para uso profesional.
-                         ¡Así es! El que estás viendo ahora mismo.</p>
-                    <a href="https://github.com/TheChack/Portfolio" target="_blank" class="tarjeta-pie">Repositorio de GitHub</a>
-                </div>
-            </div>
-        </div>
-        <div id="habilidades" class="panel">
-            <div id="a-skills"></div>
-            <h1 class="titulo-panel">Habilidades</h1>
-            <div id="idiomas">
-                <h2 class="categoria-titulo">Idiomas</h2>
-                <ul class="listas">
-                    <li><div class="tooltip">
-                        <img class="img-skill" src="./Assets/Media/lang-es.png">
-                        <span class="tooltip-texto">Español</span>
-                        <div class="rating">
-                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
-                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
-                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
-                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
-                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
-                        </div>
-                    </div></li>
-                    <li><div class="tooltip">
-                        <img class="img-skill" src="./Assets/Media/lang-en.png">
-                        <span class="tooltip-texto">Inglés</span>
-                        <div class="rating">
-                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
-                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
-                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
-                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
-                            <img class="estrella-media" src="./Assets/Icons/star-half-stroke-regular.svg">
-                        </div>
-                    </div></li>
-                    <li><div class="tooltip">
-                        <img class="img-skill" src="./Assets/Media/lang-jp.png">
-                        <span class="tooltip-texto">Japonés</span>
-                        <div class="rating">
-                            <img class="estrella-full" src="./Assets/Icons/star-solid.svg">
-                            <img class="estrella-media" src="./Assets/Icons/star-half-stroke-regular.svg">
-                            <img class="estrella-vacia" src="./Assets/Icons/star-regular.svg">
-                            <img class="estrella-vacia" src="./Assets/Icons/star-regular.svg">
-                            <img class="estrella-vacia" src="./Assets/Icons/star-regular.svg">
-                        </div>
-                        
-                    </div></li>
-                </ul>
-            </div>
-            <div id="programacion">
-                <h2 class="categoria-titulo">Programación</h2>
-                <table>
-                    <tr>
-                        <th>Básico</th>
-                        <td><div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/cplusplus.svg">
-                            <span class="tooltip-texto">C++</span>
-                        </div>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/git.svg">
-                            <span class="tooltip-texto">Git</span>
-                        </div>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/java.svg">
-                            <span class="tooltip-texto">Java</span>
-                        </div>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/php.svg">
-                            <span class="tooltip-texto">PHP</span>
-                        </div>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/python.svg">
-                            <span class="tooltip-texto">Python</span>
-                        </div>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/ruby.svg">
-                            <span class="tooltip-texto">Ruby</span>
-                        </div>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/react.svg">
-                            <span class="tooltip-texto">React.js</span>
-                        </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Intermedio</th>
-                        <td>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/js.svg">
-                            <span class="tooltip-texto">JavaScript</span>
-                        </div>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/ts.svg">
-                            <span class="tooltip-texto">TypeScript</span>
-                        </div>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/bootstrap.svg">
-                            <span class="tooltip-texto">Bootstrap</span>
-                        </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Avanzado</th>
-                        <td>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/html5.svg">
-                            <span class="tooltip-texto">HTML</span>
-                        </div>
-                        <div class="tooltip">
-                            <img class="img-skill" src="./Assets/Icons/css.svg">
-                            <span class="tooltip-texto">CSS</span>
-                        </div>
-                        </td>  
-                    </tr>
-                </table>
-            </div>
-            <div id="informatica">
-                <h2 class="categoria-titulo">Informática</h2>
-                <table>
-                    <tr>
-                        <th>Básico</th>
-                        <td>
-                        <img class="img-skill" src="./Assets/Icons/linux.svg">
-                        <img class="img-skill" src="./Assets/Icons/premiere.svg">
-                    </tr>
-                    <tr>
-                        <th>Intermedio</th>
-                        <td>
-                        <img class="img-skill" src="./Assets/Icons/premiere.svg">
-                        <img class="img-skill" src="./Assets/Icons/office.svg">
-                        <img class="img-skill" src="./Assets/Icons/wordpress.svg"></td>
-                    </tr>
-                    <tr>
-                        <th>Avanzado</th>
-                        <td>
-                        <img class="img-skill" src="./Assets/Icons/windows.svg"></td>
-                    </tr>
-                </table>
-            </div>
-            <div id="soft-skills">
-                <h2 class="categoria-titulo">Soft-Skills</h2>
-                    <ul class="listas soft-skills">
-                        <li><div class="tooltip">
-                            <img class="img-skill" src="./Assets/Media/softskill-adapt.png">
-                            <span class="tooltip-texto">Adaptabilidad</span>
-                        </div></li>                        
-                        <li><div class="tooltip">
-                            <img class="img-skill" src="./Assets/Media/softskill-communication.png">
-                            <span class="tooltip-texto">Comunicación</span>
-                        </div></li>   
-                        <li><div class="tooltip">
-                            <img class="img-skill" src="./Assets/Media/softskill-creative.png">
-                            <span class="tooltip-texto">Creatividad</span>
-                        </div></li> 
-                        <li><div class="tooltip">
-                            <img class="img-skill" src="./Assets/Media/softskill-teamwork.png">
-                            <span class="tooltip-texto">Trabajo en Equipo</span>
-                        </div></li> 
-                        <li><div class="tooltip">
-                            <img class="img-skill" src="./Assets/Media/softskill-attentiondetail.png">
-                            <span class="tooltip-texto">Detallista</span>
-                        </div></li> 
-                        <li><div class="tooltip">
-                            <img class="img-skill" src="./Assets/Media/softskill-problemsolve.png">
-                            <span class="tooltip-texto">Resolución de problemas</span>
-                        </div></li> 
-                    </ul>
-            </div>
-        </div>
-    </section>
-</main>
-    <footer>
-        <p>Propiedad de Augusto Chacana.</p>
-        <p>Copyright 2023 (?).</p>
-        <hr>
-        <div class="social-media-footer">
-            <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Icons/email.svg"></a>
+        <div class="social-media">
+            <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Icons/correo.svg"></a>
             <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><img src="./Assets/Icons/whatsapp.svg"></a>
             <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><img src="./Assets/Icons/linkedin.svg"></a>
             <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Icons/github.svg"></a>
         </div>
-        <p class="volver-arriba"><a href="#a-top">Volver Arriba</a></p>
-        <span id="hora"></span>
-    </footer>
+    </section>
+    <section class="acerca-de">
+        <div class="section-text">
+            Tengo pasión por la programación y el diseño. Hace años que me he adentrado en el mundo del Desarrollo Front-End, y siempre estoy buscando nuevos desafios.
+        </div>
+        <div class="skills">
+
+        </div>
+    </section>
+</main>
 </body>
 </html>

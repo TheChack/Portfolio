@@ -30,6 +30,17 @@ function menuConfig() {
   }
 }
 
+window.onscroll = function() {navbarCambio()}; 
+
+function navbarCambio() {
+  const barra = document.getElementById('nav-bar');
+  if (document.body.scrollTop > 0 || 
+    document.documentElement.scrollTop > 0) {
+    barra.classList.add('nav-bar-activo');
+  } else {
+    barra.classList.remove('nav-bar-activo');
+  }
+}
 
 function modoOscuro() {
   var darkBody = document.body;
