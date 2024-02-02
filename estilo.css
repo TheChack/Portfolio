@@ -65,6 +65,7 @@ body {
     0% {
         opacity: 0;
         transform: translateY(5%);
+        transform: translateY(5%);
     }
     100% {
         opacity: 1;
@@ -193,6 +194,7 @@ hr {
     width: 90%;
     margin: 30px auto;
     background-color: var(--grey-hr);
+    background-color: var(--grey-hr);
 }
 .header-banner {
     display: flex;
@@ -205,6 +207,8 @@ hr {
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed;
     transition: 0.3s;
+    user-select: none;
+    background-color: var(--white-background);
     user-select: none;
     background-color: var(--white-background);
 }
@@ -249,6 +253,7 @@ hr {
 }
 .banner-texto {
     text-transform: none;
+    font-size: 1.3rem;
     font-size: 1.3rem;
 }
 .social-media {
@@ -417,6 +422,8 @@ section {
 /* DARK MODE */
 
 body.modo-oscuro {
+    background-color: var(--darkmode-bg); 
+    color: var(--white-site);
     background-color: var(--darkmode-bg); 
     color: var(--white-site);
 }
