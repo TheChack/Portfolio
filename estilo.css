@@ -243,6 +243,7 @@ hr {
     font-size: 5rem;
     font-weight: 600;
     line-height: 90%;
+    padding: 0 20px;
 }
 .banner-subtitulo {
     font-family: 'Rubik';
