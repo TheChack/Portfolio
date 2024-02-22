@@ -277,7 +277,7 @@ section {
 .section-text {
     font-family: 'Rubik', 'Pontano Sans', sans-serif;
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: 400;
     width: 500px;
     text-align: left;
     color: var(--dark-blue-nav);
@@ -317,7 +317,7 @@ section {
     font-size: 1.1rem;
 }
 .skill-list {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
     padding: 13px 0 33px;
     line-height: 150%;
