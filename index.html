@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="/Assets/Media/icon-head.png">
+    <script type="text/JavaScript" src="./cositas.js"></script>
+    <title>Augusto Chacana | Portfolio Oficial</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar flex" id="nav-bar">
+            <div class="logo-y-titulo flex">
+                <img src="./Assets/Media/icon.png" id="logo" alt="Logo" title=":D">
+                <div class="titulo-nav">
+                    <h1 id="titulo-logo">Augusto<br/>Chacana</h1>
+                </div>
+            </div>
+            <div class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Sobre mí</a>
+                <a href="#">Habilidades</a>
+                <a href="#">Proyectos</a>
+                <a id="dark-mode-button" onclick="modoOscuro()">
+                    <img id="dark-mode-img1" class="dark-mode-mostrar" src="./Assets/Icons/darkmode-luna.svg">
+                    <img id="dark-mode-img2" class="dark-mode" src="./Assets/Icons/darkmode-sol.svg"></a>
+            </div>
+        </div>
+    </nav>
+<main>
+    <section class="header-banner" id="header-banner">
+        <div class="banner-content flex">
+            <img class="profile-pic" src="./Assets/Media/Profilepic.jpg" alt="imagen de perfil" >
+            <div class="banner-descripcion">
+                <h1 class="banner-titulo">Augusto Chacana</h1>
+                <h2 class="banner-subtitulo">Programador | Diseñador UX/UI</h2>
+                <p class="banner-texto"></p>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="mailto:augustochacana6@gmail.com"><img src="./Assets/Icons/correo.svg"></a>
+            <a href="https://api.whatsapp.com/send?phone=543834590887" target="_blank"><img src="./Assets/Icons/whatsapp.svg"></a>
+            <a href="https://www.linkedin.com/in/augusto-chacana/" target="_blank"><img src="./Assets/Icons/linkedin.svg"></a>
+            <a href="https://github.com/TheChack" target="_blank"><img src="./Assets/Icons/github.svg"></a>
+        </div>
+    </section>
+    <section class="acerca-de flex">
+        <div class="acerca-left flex">
+            <div class="section-text">
+                Tengo pasión por la <span class="highlight">Programación</span>.<br/> 
+                Hace años que me estoy adentrado en el mundo del 
+                Desarrollo Front-End. Siempre estoy buscando nuevos desafios para aprender y mejorar.
+            </div>
+            <div class="section-text">
+                Además me embarco en el <span class="highlight">Diseño</span>, 
+                y actualmente busco desempeñarme en el Diseño UI/UX. También practico ilustración y el dibujo.
+            </div>
+        </div>
+        <div class="acerca-right">
+        </div>
+    </section>
+    <section class="skills flex">
+        <div class="skill-card">
+            <div class="skill-code">
+                <h1 class="skill-titulo">Programación</h1>
+                <p class="skill-sub">Me llevo bien con estos</p>
+                <p class="skill-list">HTML · CSS · JavaScript · Python · Git</p>
+                <p class="skill-sub">Mis Dev Tools preferidos</p>
+                <p class="skill-list">Bootstrap · Angular</p>
+            </div>
+            <div class="skill-design">
+                <h1 class="skill-titulo">Diseño</h1>
+                <p class="skill-sub">Me gusta diseñar</p>
+                <p class="skill-list">Sitios Web · Apps · UI/UX</p>
+                <p class="skill-sub">Me manejo con</p>
+                <p class="skill-list">Figma · Photoshop</p>
+            </div>
+            <div class="skill-misc">
+                <h1 class="skill-titulo">Misceláneo</h1>
+                <p class="skill-sub">También uso</p>
+                <p class="skill-list">Visual Studio Code · Wordpress · Clip Studio Paint · Microsoft Office · Linux</p>
+            </div>
+        </div>
+    </section>
+    <section class="proyectos flex">
+        <div class="proyectos-text">
+            Hice cosas
+        </div>
+        <div class="proyectos-cards">
+        </div>
+    </section>
+</main>
+</body>
+</html>
