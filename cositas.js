@@ -47,47 +47,17 @@ function modoOscuro() {
   var luna = document.getElementById('dark-mode-img1');
   var sol = document.getElementById('dark-mode-img2');
   var banner = document.getElementById('header-banner');
+  var navMenu = document.getElementsByClassName('nav-bar');
 
   darkBody.classList.toggle('modo-oscuro');
 
   if (darkBody.className == 'modo-oscuro') {
     luna.style.display = "none";
     sol.style.display = "block";
-    banner.style.backgroundImage = "url(./Assets/Media/Banner-bg2.svg)";
+    banner.style.backgroundColor = "var(--darkmode-bg)";
   } else {
     luna.style.display = "block";
     sol.style.display = "none";
-    banner.style.backgroundImage = "url(./Assets/Media/Banner-bg1.svg)";
+    banner.style.backgroundColor = "var(--background1)";
   }
 }
-
-
-function fechaHora() {
-  var span = document.getElementById('hora');
-
-  var d = new Date();
-  var s = d.getSeconds();
-  var m = d.getMinutes();
-  var h = d.getHours();
-  var dia = d.getDay();
-  var diaMes = d.getDate();
-  var mes = d.getMonth();
-
-  function conCero(n) {
-    if (n < 10) {
-      n = "0" + n;
-    }
-    return n;
-  }
-
-  h = conCero(h);
-  m = conCero(m);
-  s = conCero(s);
-
-  var semana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-  var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", 
-              "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
-  span.textContent = h + ":" + m + ":" + s + " | " + semana[dia] + " " + diaMes + " de " + meses[mes];
-
-}
-setInterval(fechaHora, 1000);

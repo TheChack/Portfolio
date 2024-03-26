@@ -1,31 +1,15 @@
 @font-face {
-    font-family: 'Coolvetica';
-    src: url(Assets/Fonts/coolvetica\ rg.otf);
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Rubik';
-    src: url(Assets/Fonts/Rubik/Rubik-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: 'Pontano Sans';
-    src: url(Assets/Fonts/Pontano_Sans/PontanoSans-VariableFont_wght.ttf);
+    font-family: 'Gabarito';
+    src: url(/Assets/Fonts/Gabarito-VariableFont_wght.ttf);
 }
 :root {
-    --background1: #f8f8f8;
-    --background2: #1d8346;
-    --white-site: #f4f4f5;
-    --grey-clear: #c5c5c5;
-    --grey-hr: #777d8b;
-    --dark-blue-nav: #1d263b;
-    --green-button: #135f31;
-    --green-highlight: #279C56;
+    --background1: #f8f8f8; --background2: #1d8346;
+    --white-site: #f4f4f5; --grey-clear: #c5c5c5;
+    --grey-hr: #777d8b; --dark-blue-nav: #1d263b;
+    --green-button: #135f31; --green-highlight: #279C56;
 
-    --darkmode-blue-nav: #141b2b;
-    --darkmode-green-hgl: #20bb5e;
-    --darkmode-bg: #253044;
-    --darkmode-shadow: #04050736;
+    --darkmode-blue-nav: #141b2b; --darkmode-green-hgl: #20bb5e;
+    --darkmode-bg: #253044; --darkmode-shadow: #04050736;
 }
 ::-webkit-scrollbar {width: 8px;}
 ::-webkit-scrollbar-track {background: var(--white-site);}
@@ -45,7 +29,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: Helvetica, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gabarito', Helvetica, 'Segoe UI', Tahoma, sans-serif;
     font-size: 14px;
     transition: all 0.3s ease-out;
     background-color: var(--white-background);
@@ -95,7 +79,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 12px 0;
-    color: var(--white-site);
+    color: var(--dark-blue-nav);
     background-color: transparent;
     user-select: none;
     z-index: 3;
@@ -104,6 +88,7 @@ a {
 }
 .nav-bar-activo {
     background-color: var(--dark-blue-nav);
+    color: var(--white-site);
     box-shadow: 0 3px 3px var(--darkmode-shadow);
 }
 .nav-bar-activo .menu a:active {
@@ -117,7 +102,6 @@ a {
     position: relative;
     margin-right: 10px;
     font-size: 1rem;
-    font-family: 'Rubik', sans-serif;
 }
 .menu > a {
     display: inline-block;
@@ -201,16 +185,14 @@ hr {
     flex-direction: column;
     justify-content: center;
     height: calc(100vh);
-    background-image: url(./Assets/Media/Banner-bg1.svg), url(./Assets/Media/Banner-bg2.svg);
+    background-color: var(--background1), var(--darkmode-bg);
     background-position: 50% 50%, 50% 50%;
     background-size: cover, cover;
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed;
     transition: 0.3s;
     user-select: none;
-    background-color: var(--white-background);
-    user-select: none;
-    background-color: var(--white-background);
+    background-color: var(--background1);
 }
 .banner-content {
     place-self: center;
@@ -234,19 +216,16 @@ hr {
 }
 .banner-descripcion {
     display: inline-block;
-    font-family: Helvetica, 'Pontano Sans', sans-serif;
-    text-align: center;
+    text-align: left;
     margin: auto 0;
-    max-width: 400px;
+    padding-left: 40px;
 }
 .banner-titulo {
     font-size: 5rem;
     font-weight: 600;
     line-height: 90%;
-    padding: 0 20px;
 }
 .banner-subtitulo {
-    font-family: 'Rubik';
     margin: 25px auto;
     font-size: 1.5rem;
     font-weight: 300;
@@ -277,18 +256,25 @@ section {
     background-color: var(--background1);
     padding: 60px;
     transition: 0.3s;
+    max-width: 1400px;
+    margin: auto;
 }
-.acerca-left {
+.acerca-content {
     flex-direction: column;
     gap: 30px;
+    flex-wrap: wrap;
 }
 .section-text {
-    font-family: 'Rubik', 'Pontano Sans', sans-serif;
     font-size: 1.4rem;
     font-weight: 300;
-    width: 500px;
     text-align: left;
+    width: 500px;
     color: var(--dark-blue-nav);
+    margin-left: auto;
+}
+.section-text:nth-child(even) {
+    text-align: right;
+    margin-right: auto;
 }
 .highlight {
     font-weight: 500;
@@ -300,11 +286,11 @@ section {
     user-select: none;
 }
 .skill-card {
-    font-family: 'Rubik', sans-serif;
     display: flex;
     flex-direction: row;
     margin: auto;
-    width: 80%;
+    min-width: 90%;
+    width: 1400px;
     border-radius: 15px;
     border: 1px solid var(--grey-clear);
     background-color: var(--background1);
@@ -315,7 +301,7 @@ section {
 }
 .skill-code, .skill-design, .skill-misc {
     font-size: 1rem;
-    width: 33%;
+    flex: 33%;
     text-align: center;
     padding: 50px 20px;
 }
@@ -339,7 +325,6 @@ section {
     padding: 60px;
 }
 .proyectos-text {
-    font-family: 'Rubik', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -414,18 +399,15 @@ section {
     }
 }
 
-#hora {
-    position: absolute;
-    right: 10px;
-    color: #686868;
-}
-
 /* DARK MODE */
 
 body.modo-oscuro {
     background-color: var(--darkmode-bg); 
     color: var(--white-site);
     background-color: var(--darkmode-bg); 
+    color: var(--white-site);
+}
+body.modo-oscuro .nav-bar {
     color: var(--white-site);
 }
 body.modo-oscuro .banner-descripcion {
